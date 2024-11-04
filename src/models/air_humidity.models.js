@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const SoilHumiditySchema = new Schema(
+const AirHumiditySchema = new Schema(
   {
     id: {
       type: mongoose.Schema.Types.ObjectId,
@@ -25,6 +25,6 @@ const SoilHumiditySchema = new Schema(
   { versionKey: false }
 );
 
-const SoilHumidity = mongoose.model("SoilHumidity", SoilHumiditySchema);
+const AirHumidity = mongoose.model("AirHumidity", AirHumiditySchema);
 
-module.exports = SoilHumidity;
+module.exports = AirHumidity;
